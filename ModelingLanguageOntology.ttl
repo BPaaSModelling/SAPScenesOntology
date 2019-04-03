@@ -153,6 +153,11 @@ lo:BusinessProcessRequirementModelingView
   rdf:type lo:ModelingLanguage ;
   rdfs:label "CMMN 1.1" ;
 .
+lo:Car
+  rdf:type owl:Class ;
+  rdfs:label "SAP TransportationElement" ;
+  rdfs:subClassOf lo:TransportationElement ;
+.
 lo:CombinationNotAllowed
   rdf:type owl:Class ;
   rdfs:label "Not Allowed Source-Target Combination" ;
@@ -336,6 +341,14 @@ lo:ProcessModelingView
   rdfs:label "ModelingView_ForBPMN" ;
   rdfs:label "Process Modeling View" ;
 .
+lo:SAPScenesModelingLanguage
+  rdf:type lo:ModelingLanguage ;
+  rdfs:label "SAPScenesModelingLanguage" ;
+.
+lo:SAPScenesModelingView
+  rdf:type lo:ModelingView ;
+  rdfs:label "SAPScenesModelingView" ;
+.
 lo:SequenceFlow_1
   rdf:type bpmn:SequenceFlow ;
   rdfs:label "sf" ;
@@ -345,6 +358,11 @@ lo:StartTest
   rdfs:domain bpmn:UserTask ;
   rdfs:label "Start time _ Test" ;
   rdfs:range xsd:dateTime ;
+.
+lo:TransportationElement
+  rdf:type owl:Class ;
+  rdfs:label "TransportationElement" ;
+  rdfs:subClassOf lo:ModelingElement ;
 .
 lo:UserTask_1
   rdf:type bpmn:UserTask ;
