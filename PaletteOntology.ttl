@@ -29,6 +29,7 @@ po:Accessory
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsHiddenFromPalette false ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Accessory ;
+  rdfs:label "Accessory" ;
 .
 po:Airport
   a po:PaletteElement ;

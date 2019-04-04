@@ -358,11 +358,7 @@ lo:StartTest
   rdfs:domain bpmn:UserTask ;
   rdfs:label "Start time _ Test" ;
   rdfs:range xsd:dateTime ;
-.
-lo:TransportationElement
-  rdf:type owl:Class ;
-  rdfs:label "TransportationElement" ;
-  rdfs:subClassOf lo:ModelingElement ;
+
 .
 lo:UserTask_1
   rdf:type bpmn:UserTask ;
@@ -542,6 +538,909 @@ nco:NCO
 .
 <http://ikm-group.ch/archimeo/iso42010#ADMetaModel>
   rdfs:subClassOf <http://fhnw.ch/modelingEnvironment/DomainOntology#Standard> ;
+.
+<http://fhnw.ch/modelingEnvironment/LanguageOntology#1Year>
+  a lo:Warranty ;
+  rdfs:label "1 Year" ;
+.
+<http://fhnw.ch/modelingEnvironment/LanguageOntology#2Years>
+  a lo:Warranty ;
+  rdfs:label "2 Years" ;
+.
+<http://fhnw.ch/modelingEnvironment/LanguageOntology#3Years>
+  a lo:Warranty ;
+  rdfs:label "3 Years" ;
+.
+lo:Accessory
+  a owl:Class ;
+  rdfs:subClassOf lo:SceneObject ;
+.
+lo:Age
+  a owl:DatatypeProperty ;
+  rdfs:domain lo:Character ;
+  rdfs:label "Age" ;
+  rdfs:range xsd:string ;
+.
+lo:Airport
+  a owl:Class ;
+  rdfs:label "Airport" ;
+  rdfs:subClassOf lo:Background ;
+
+.
+lo:ApplianceDimensions
+  a owl:DatatypeProperty ;
+  rdfs:domain lo:ElectricAppliances ;
+  rdfs:label "Appliance Dimensions" ;
+  rdfs:range xsd:string ;
+.
+lo:Arrow
+  a owl:Class ;
+  rdfs:subClassOf lo:SceneObject ;
+
+.
+lo:Background
+  a owl:Class ;
+  rdfs:label "Background" ;
+  rdfs:subClassOf lo:SceneObject ;
+.
+lo:Bar
+  a owl:Class ;
+  rdfs:label "Bar" ;
+  rdfs:subClassOf lo:Background ;
+.
+lo:Bench
+  a owl:Class ;
+  rdfs:label "Bench" ;
+  rdfs:subClassOf lo:Furniture ;
+.
+lo:Bench_1
+  a lo:Bench ;
+  rdfs:label "Bench_1" ;
+.
+lo:BigHouse
+  a owl:Class ;
+  rdfs:subClassOf lo:Building ;
+.
+lo:BigSign
+  a owl:Class ;
+  rdfs:subClassOf lo:Sign ;
+.
+lo:Bike
+  a owl:Class ;
+  rdfs:label "Bike" ;
+  rdfs:subClassOf lo:TransportationElement ;
+.
+lo:Bike_1
+  a lo:Bike ;
+  rdfs:label "Bike_1" ;
+.
+lo:Black
+  a lo:Colour ;
+.
+lo:Bosch
+  a lo:Brand ;
+  rdfs:label "Bosch" ;
+.
+lo:Brand
+  a owl:Class ;
+  rdfs:label "Brand" ;
+  rdfs:subClassOf lo:ModelingElement ;
+.
+lo:Brown
+  a lo:Colour ;
+.
+lo:Building
+  a owl:Class ;
+  rdfs:subClassOf lo:SceneObject ;
+.
+lo:Bus
+  a owl:Class ;
+  rdfs:label "Bus" ;
+  rdfs:subClassOf lo:TransportationElement ;
+.
+lo:Bus_1
+  a lo:Bus ;
+  rdfs:label "Bus_1" ;
+.
+lo:BusinessMan
+  a owl:Class ;
+  rdfs:label "Business Man" ;
+  rdfs:subClassOf lo:Character ;
+.
+lo:BusinessMan_1
+  a lo:BusinessMan ;
+  rdfs:label "BusinessMan_1" ;
+
+.
+lo:BusinessWoman
+  a owl:Class ;
+  rdfs:label "Business Woman" ;
+  rdfs:subClassOf lo:Character ;
+.
+lo:BusinessWoman_1
+  a lo:BusinessWoman ;
+  rdfs:label "BusinessWoman_1" ;
+.
+lo:CabinetDimensions
+  a owl:DatatypeProperty ;
+  rdfs:domain owl:Ontology ;
+  rdfs:label "Cabinet Dimensions" ;
+  rdfs:range xsd:string ;
+.
+lo:CabinetFunctions
+  a owl:DatatypeProperty ;
+  rdfs:domain lo:Cabinets ;
+  rdfs:label "Cabinet Functions" ;
+  rdfs:range xsd:string ;
+.
+lo:CabinetInstallationHeight
+  a owl:DatatypeProperty ;
+  rdfs:domain lo:Cabinets ;
+  rdfs:label "Cabinet Installation Height" ;
+  rdfs:range xsd:string ;
+.
+lo:Cabinets
+  a owl:Class ;
+  rdfs:label "Cabinets" ;
+  rdfs:subClassOf lo:Furniture ;
+.
+lo:Cabinets_1
+  a lo:Cabinets ;
+  rdfs:label "Cabinets_1" ;
+.
+lo:Cafe
+  a owl:Class ;
+  rdfs:label "Cafe" ;
+  rdfs:subClassOf lo:Background ;
+.
+lo:Car
+  a owl:Class ;
+  rdfs:label "Car" ;
+  rdfs:subClassOf lo:TransportationElement ;
+.
+lo:Car_1
+  a lo:Car ;
+  rdfs:label "Car_1" ;
+.
+lo:CashRegisterTable
+  a owl:Class ;
+  rdfs:label "Cash Register Table" ;
+  rdfs:subClassOf lo:Furniture ;
+.
+lo:CashRegisterTable_1
+  a lo:CashRegisterTable ;
+  rdfs:label "CashRegisterTable_1" ;
+.
+lo:Chair
+  a owl:Class ;
+  rdfs:label "Chair" ;
+  rdfs:subClassOf lo:Furniture ;
+.
+lo:Chair_1
+  a lo:Chair ;
+  rdfs:label "Chair_1" ;
+.
+lo:Character
+  a owl:Class ;
+  rdfs:label "Character" ;
+.
+lo:Character_1
+  a lo:Character ;
+  rdfs:label "Character_1" ;
+.
+lo:City
+  a owl:Class ;
+  rdfs:label "City" ;
+  rdfs:subClassOf lo:Background ;
+.
+lo:CoffeeCorner
+  a owl:Class ;
+  rdfs:label "Coffee Corner" ;
+  rdfs:subClassOf lo:Background ;
+.
+lo:CoffeeCup
+  a owl:Class ;
+  rdfs:subClassOf lo:Accessory ;
+.
+lo:Colour
+  a owl:Class ;
+  rdfs:subClassOf lo:ModelingElement ;
+
+.
+lo:CookingRange
+  a owl:Class ;
+  rdfs:label "Cooking Range" ;
+  rdfs:subClassOf lo:ElectricAppliances ;
+.
+lo:Couch
+  a owl:Class ;
+  rdfs:label "Couch" ;
+  rdfs:subClassOf lo:Furniture ;
+.
+lo:Couch_1
+  a lo:Couch ;
+  rdfs:label "Couch_1" ;
+.
+lo:Countryside
+  a owl:Class ;
+  rdfs:label "Countryside" ;
+  rdfs:subClassOf lo:Background ;
+.
+lo:CryingBubble
+  a owl:Class ;
+  rdfs:subClassOf lo:SpeechBubble ;
+
+.
+lo:DesktopSetting
+  a owl:Class ;
+  rdfs:label "Desktop Setting" ;
+  rdfs:subClassOf lo:Furniture ;
+.
+lo:DesktopSetting_1
+  a lo:DesktopSetting ;
+  rdfs:label "DesktopSetting_1" ;
+.
+lo:Device
+  a owl:Class ;
+  rdfs:label "Device" ;
+  rdfs:subClassOf lo:SceneObject ;
+.
+lo:Device_1
+  a lo:Device ;
+  rdfs:label "Device_1" ;
+.
+lo:DirectionSign
+  a owl:Class ;
+  rdfs:subClassOf lo:Sign ;
+.
+lo:Dishwasher
+  a owl:Class ;
+  rdfs:label "Dishwasher" ;
+  rdfs:subClassOf lo:ElectricAppliances ;
+.
+lo:Dishwasher_1
+  a lo:Dishwasher ;
+  rdfs:label "Dishwasher_1" ;
+.
+lo:Doctor
+  a owl:Class ;
+  rdfs:label "Doctor" ;
+  rdfs:subClassOf lo:Character ;
+.
+lo:Doctor_1
+  a lo:Doctor ;
+  rdfs:label "Doctor_1" ;
+
+.
+lo:DoubleDoorFridge
+  a owl:Class ;
+  rdfs:label "Double Door Fridge" ;
+  rdfs:subClassOf lo:Fridge ;
+.
+lo:DoubleDoorFridge_1
+  a lo:DoubleDoorFridge ;
+  rdfs:label "DoubleDoorFridge_1" ;
+.
+lo:Down
+  a owl:Class ;
+  rdfs:subClassOf lo:Arrow ;
+.
+lo:Dresser
+  a owl:Class ;
+  rdfs:label "Dresser" ;
+  rdfs:subClassOf lo:Furniture ;
+.
+lo:Dresser_1
+  a lo:Dresser ;
+  rdfs:label "Dresser_1" ;
+.
+lo:Drone
+  a owl:Class ;
+  rdfs:label "Drone" ;
+  rdfs:subClassOf lo:TransportationElement ;
+.
+lo:Drone_1
+  a lo:Drone ;
+  rdfs:label "Drone_1" ;
+.
+lo:ElectricAppliances
+  a owl:Class ;
+  rdfs:label "Electric Appliances" ;
+  rdfs:subClassOf lo:SceneObject ;
+.
+lo:ElectricAppliances_1
+  a lo:ElectricAppliances ;
+  rdfs:label "ElectricAppliances_1" ;
+.
+lo:Electrolux
+  a lo:Brand ;
+  rdfs:label "Electrolux" ;
+.
+lo:ExtractorHood
+  a owl:Class ;
+  rdfs:label "Extractor Hood" ;
+  rdfs:subClassOf lo:ElectricAppliances ;
+.
+lo:ExtractorHood_1
+  a lo:ExtractorHood ;
+  rdfs:label "ExtractorHood_1" ;
+.
+lo:Factory
+  a owl:Class ;
+  rdfs:subClassOf lo:Building ;
+.
+lo:Flipchart
+  a owl:Class ;
+  rdfs:label "Flipchart" ;
+  rdfs:subClassOf lo:Furniture ;
+.
+lo:Flipchart_1
+  a lo:Flipchart ;
+  rdfs:label "Flipchart_1" ;
+.
+lo:Forklift
+  a owl:Class ;
+  rdfs:label "Forklift" ;
+  rdfs:subClassOf lo:TransportationElement ;
+.
+lo:Forklift_1
+  a lo:Forklift ;
+  rdfs:label "Forklift_1" ;
+.
+lo:Fridge
+  a owl:Class ;
+  rdfs:label "Fridge" ;
+  rdfs:subClassOf lo:Furniture ;
+.
+lo:Fridge_1
+  a lo:Fridge ;
+  rdfs:label "Fridge_1" ;
+.
+lo:Furniture
+  a owl:Class ;
+  rdfs:label "Furniture" ;
+  rdfs:subClassOf lo:SceneObject ;
+.
+lo:FurnitureDimensions
+  a owl:DatatypeProperty ;
+  rdfs:domain lo:Furniture ;
+  rdfs:label "Furniture Dimensions" ;
+  rdfs:range xsd:string ;
+.
+lo:Furniture_1
+  a lo:Furniture ;
+  rdfs:label "Furniture_1" ;
+.
+lo:Gong
+  a owl:Class ;
+  rdfs:label "Gong" ;
+  rdfs:subClassOf lo:Furniture ;
+.
+lo:Gong_1
+  a lo:Gong ;
+  rdfs:label "Gong_1" ;
+.
+lo:Grey
+  a lo:Colour ;
+.
+lo:Heater
+  a owl:Class ;
+  rdfs:label "Heater" ;
+  rdfs:subClassOf lo:ElectricAppliances ;
+.
+lo:Heater_1
+  a lo:Heater ;
+  rdfs:label "Heater_1" ;
+.
+lo:HighCabinet
+  a owl:Class ;
+  rdfs:label "High Cabinet" ;
+  rdfs:subClassOf lo:Cabinets ;
+.
+lo:HighCabinetForStorage
+  a owl:Class ;
+  rdfs:label "High Cabinet for Storage" ;
+  rdfs:subClassOf lo:HighCabinet ;
+.
+lo:HighCabinetForStorage_1
+  a lo:HighCabinetForStorage ;
+  rdfs:label "HighCabinetForStorage_1" ;
+.
+lo:HighCabinetWithOven
+  a owl:Class ;
+  rdfs:label "High Cabinet with Oven" ;
+  rdfs:subClassOf lo:HighCabinet ;
+.
+lo:HighCabinetWithOven_1
+  a lo:HighCabinetWithOven ;
+  rdfs:label "HighCabinetWithOven_1" ;
+.
+lo:HighCabinet_1
+  a lo:HighCabinet ;
+  rdfs:label "HighCabinet_1" ;
+.
+lo:House
+  a owl:Class ;
+  rdfs:subClassOf lo:Building ;
+
+.
+lo:Kitchen
+  a owl:Class ;
+  rdfs:label "Kitchen" ;
+  rdfs:subClassOf lo:Background ;
+.
+lo:Laptop
+  a owl:Class ;
+  rdfs:label "Laptop" ;
+  rdfs:subClassOf lo:Device ;
+.
+lo:LaptopSetting
+  a owl:Class ;
+  rdfs:label "Laptop Setting" ;
+  rdfs:subClassOf lo:Furniture ;
+.
+lo:LaptopSetting_1
+  a lo:LaptopSetting ;
+  rdfs:label "LaptopSetting_1" ;
+.
+lo:Laptop_1
+  a lo:Laptop ;
+  rdfs:label "Laptop_1" ;
+.
+lo:Left
+  a owl:Class ;
+  rdfs:subClassOf lo:Arrow ;
+.
+lo:LowerCabinet
+  a owl:Class ;
+  rdfs:label "Lower Cabinet" ;
+  rdfs:subClassOf lo:Cabinets ;
+.
+lo:LowerCabinetWithCookingRange
+  a owl:Class ;
+  rdfs:label "Lower Cabinet with Cooking Range" ;
+  rdfs:subClassOf lo:LowerCabinet ;
+.
+lo:LowerCabinetWithCookingRange_1
+  a lo:LowerCabinetWithCookingRange ;
+  rdfs:label "LowerCabinetWithCookingRange_1" ;
+.
+lo:LowerCabinetWithShelves
+  a owl:Class ;
+  rdfs:label "Lower Cabinet with Shelves" ;
+  rdfs:subClassOf lo:LowerCabinet ;
+.
+lo:LowerCabinetWithShelves_1
+  a lo:LowerCabinetWithShelves ;
+  rdfs:label "LowerCabinetWithShelves_1" ;
+.
+lo:LowerCabinetWithSinkAndWasteDisposal
+  a owl:Class ;
+  rdfs:label "Lower Cabinet with Sink and Waste Disposal" ;
+  rdfs:subClassOf lo:LowerCabinet ;
+.
+lo:LowerCabinetWithSinkAndWasteDisposal_1
+  a lo:LowerCabinetWithSinkAndWasteDisposal ;
+  rdfs:label "LowerCabinetWithSinkAndWasteDisposal_1" ;
+.
+lo:LowerCabinet_1
+  a lo:LowerCabinet ;
+  rdfs:label "LowerCabinet_1" ;
+
+.
+lo:MallInside
+  a owl:Class ;
+  rdfs:subClassOf lo:Background ;
+.
+lo:Man
+  a owl:Class ;
+  rdfs:label "Man" ;
+  rdfs:subClassOf lo:Character ;
+.
+lo:Man_1
+  a lo:Man ;
+  rdfs:label "Man_1" ;
+.
+lo:MeetingRoom
+  a owl:Class ;
+  rdfs:label "Meeting Room" ;
+  rdfs:subClassOf lo:Background ;
+.
+lo:MobilePhone
+  a owl:Class ;
+  rdfs:label "Mobile Phone" ;
+  rdfs:subClassOf lo:Device ;
+.
+lo:MobilePhone_1
+  a lo:MobilePhone ;
+  rdfs:label "MobilePhone_1" ;
+
+.
+lo:ModelingRelation_1
+  a lo:ModelingRelation ;
+  rdfs:label "prepareKoGu1" ;
+
+.
+lo:Monitor
+  a owl:Class ;
+  rdfs:label "Monitor" ;
+  rdfs:subClassOf lo:Device ;
+.
+lo:Monitor_1
+  a lo:Monitor ;
+  rdfs:label "Monitor_1" ;
+.
+lo:Office
+  a owl:Class ;
+  rdfs:label "Office" ;
+  rdfs:subClassOf lo:Background ;
+.
+lo:OfficeBuilding
+  a owl:Class ;
+  rdfs:subClassOf lo:Building ;
+.
+lo:OldMan
+  a owl:Class ;
+  rdfs:label "Old Man" ;
+  rdfs:subClassOf lo:Character ;
+.
+lo:OldMan_1
+  a lo:OldMan ;
+  rdfs:label "OldMan_1" ;
+.
+lo:OldWoman
+  a owl:Class ;
+  rdfs:label "Old Woman" ;
+  rdfs:subClassOf lo:Character ;
+.
+lo:OldWoman_1
+  a lo:OldWoman ;
+  rdfs:label "OldWoman_1" ;
+.
+lo:Oven
+  a owl:Class ;
+  rdfs:label "Oven" ;
+  rdfs:subClassOf lo:ElectricAppliances ;
+.
+lo:PackageBig
+  a owl:Class ;
+  rdfs:subClassOf lo:Accessory ;
+.
+lo:PackageMedium
+  a owl:Class ;
+  rdfs:subClassOf lo:Accessory ;
+.
+lo:PackageSmall
+  a owl:Class ;
+  rdfs:subClassOf lo:Accessory ;
+.
+lo:PalletStack
+  a owl:Class ;
+  rdfs:subClassOf lo:Accessory ;
+.
+lo:Process
+  a owl:Class ;
+  rdfs:subClassOf lo:SceneObject ;
+
+.
+lo:Right
+  a owl:Class ;
+  rdfs:subClassOf lo:Arrow ;
+.
+lo:RobotArm
+  a owl:Class ;
+  rdfs:subClassOf lo:Accessory ;
+
+.
+lo:SceneObject
+  a owl:Class ;
+  rdfs:label "SceneObject" ;
+  rdfs:subClassOf lo:ModelingElement ;
+.
+lo:ShippingDock
+  a owl:Class ;
+  rdfs:subClassOf lo:Background ;
+.
+lo:ShoppingCart
+  a owl:Class ;
+  rdfs:label "Shopping Cart" ;
+  rdfs:subClassOf lo:Furniture ;
+.
+lo:ShoppingCart_1
+  a lo:ShoppingCart ;
+  rdfs:label "ShoppingCart_1" ;
+.
+lo:Siemens
+  a lo:Brand ;
+  rdfs:label "Siemens" ;
+.
+lo:Sign
+  a owl:Class ;
+  rdfs:subClassOf lo:SceneObject ;
+.
+lo:SingleDoorFridge
+  a owl:Class ;
+  rdfs:label "Single Door Fridge" ;
+  rdfs:subClassOf lo:Fridge ;
+.
+lo:SingleDoorFridge_1
+  a lo:SingleDoorFridge ;
+  rdfs:label "SingleDoorFridge_1" ;
+.
+lo:SmallSign
+  a owl:Class ;
+  rdfs:subClassOf lo:Sign ;
+.
+lo:SodaMaschine
+  a owl:Class ;
+  rdfs:label "Soda Maschine" ;
+  rdfs:subClassOf lo:Furniture ;
+.
+lo:SodaMaschine_1
+  a lo:SodaMaschine ;
+  rdfs:label "SodaMaschine_1" ;
+.
+lo:SpeechBubble
+  a owl:Class ;
+  rdfs:subClassOf lo:SceneObject ;
+.
+lo:Speech_Bubble
+  a owl:Class ;
+  rdfs:subClassOf lo:SpeechBubble ;
+
+.
+lo:Stool
+  a owl:Class ;
+  rdfs:label "Stool" ;
+  rdfs:subClassOf lo:Furniture ;
+.
+lo:Stool_1
+  a lo:Stool ;
+  rdfs:label "Stool_1" ;
+.
+lo:StorageRoom
+  a owl:Class ;
+  rdfs:label "Storage Room" ;
+  rdfs:subClassOf lo:Background ;
+.
+lo:Store
+  a owl:Class ;
+  rdfs:subClassOf lo:Building ;
+.
+lo:StoreAisle
+  a owl:Class ;
+  rdfs:subClassOf lo:Background ;
+.
+lo:Student
+  a owl:Class ;
+  rdfs:label "Student" ;
+  rdfs:subClassOf lo:Character ;
+.
+lo:Student_1
+  a lo:Student ;
+  rdfs:label "Student_1" ;
+.
+lo:Subway
+  a owl:Class ;
+  rdfs:label "Subway" ;
+  rdfs:subClassOf lo:Background ;
+.
+lo:Table
+  a owl:Class ;
+  rdfs:label "Table" ;
+  rdfs:subClassOf lo:Furniture ;
+.
+lo:Table_1
+  a lo:Table ;
+  rdfs:label "Table_1" ;
+.
+lo:Tablet
+  a owl:Class ;
+  rdfs:label "Tablet" ;
+  rdfs:subClassOf lo:Device ;
+.
+lo:Tablet_1
+  a lo:Tablet ;
+  rdfs:label "Tablet_1" ;
+.
+lo:Team
+  a owl:Class ;
+  rdfs:subClassOf lo:SceneObject ;
+.
+lo:ThinkingBubble
+  a owl:Class ;
+  rdfs:subClassOf lo:SpeechBubble ;
+.
+lo:TowerBuilding
+  a owl:Class ;
+  rdfs:subClassOf lo:Building ;
+.
+lo:Train
+  a owl:Class ;
+  rdfs:label "Train" ;
+  rdfs:subClassOf lo:TransportationElement ;
+.
+lo:TrainStation
+  a owl:Class ;
+  rdfs:subClassOf lo:Building ;
+.
+lo:Train_1
+  a lo:Train ;
+  rdfs:label "Train_1" ;
+.
+lo:TransportationElement
+  a owl:Class ;
+  rdfs:label "Transportation Element" ;
+  rdfs:subClassOf lo:SceneObject ;
+.
+lo:TransportationElement_1
+  a lo:TransportationElement ;
+  rdfs:label "TransportationElement_1" ;
+.
+lo:Trolley
+  a owl:Class ;
+  rdfs:label "Trolley" ;
+  rdfs:subClassOf lo:TransportationElement ;
+.
+lo:Trolley_1
+  a lo:Trolley ;
+  rdfs:label "Trolley_1" ;
+.
+lo:Truck
+  a owl:Class ;
+  rdfs:label "Truck" ;
+  rdfs:subClassOf lo:TransportationElement ;
+.
+lo:TruckDriver
+  a owl:Class ;
+  rdfs:label "Truck Driver" ;
+  rdfs:subClassOf lo:Character ;
+.
+lo:TruckDriver_1
+  a lo:TruckDriver ;
+  rdfs:label "TruckDriver_1" ;
+.
+lo:Truck_1
+  a lo:Truck ;
+  rdfs:label "Truck_1" ;
+.
+lo:Truck_Dock
+  a owl:Class ;
+  rdfs:label "Truck_Dock" ;
+  rdfs:subClassOf lo:Background ;
+.
+lo:Up
+  a owl:Class ;
+  rdfs:subClassOf lo:Arrow ;
+
+.
+lo:V-Zug
+  a lo:Brand ;
+  rdfs:label "VZug" ;
+.
+lo:WallCabinet
+  a owl:Class ;
+  rdfs:label "Wall Cabinet" ;
+  rdfs:subClassOf lo:Cabinets ;
+.
+lo:WallCabinetWithGlass
+  a owl:Class ;
+  rdfs:label "Wall Cabinet with Glass" ;
+  rdfs:subClassOf lo:WallCabinet ;
+.
+lo:WallCabinetWithGlass_1
+  a lo:WallCabinetWithGlass ;
+  rdfs:label "WallCabinetWithGlass_1" ;
+.
+lo:WallCabinetWithShelvesAndNoDoor
+  a owl:Class ;
+  rdfs:label "Wall Cabinet with Shelves and No Door" ;
+  rdfs:subClassOf lo:WallCabinet ;
+.
+lo:WallCabinetWithShelvesAndNoDoor_1
+  a lo:WallCabinetWithShelvesAndNoDoor ;
+  rdfs:label "WallCabinetWithShelvesAndNoDoor_1" ;
+.
+lo:WallCabinetWithSideDoor
+  a owl:Class ;
+  rdfs:label "Wall Cabinet with Side Door" ;
+  rdfs:subClassOf lo:WallCabinet ;
+.
+lo:WallCabinetWithSideDoor_1
+  a lo:WallCabinetWithSideDoor ;
+  rdfs:label "WallCabinetWithSideDoor_1" ;
+.
+lo:WallCabinet_1
+  a lo:WallCabinet ;
+  rdfs:label "WallCabinet_1" ;
+.
+lo:WallReck
+  a owl:Class ;
+  rdfs:subClassOf lo:Background ;
+.
+lo:Warehouse
+  a owl:Class ;
+  rdfs:subClassOf lo:Building ;
+.
+lo:Warranty
+  a owl:Class ;
+  rdfs:label "Warranty" ;
+  rdfs:subClassOf lo:ModelingElement ;
+.
+lo:White
+  a lo:Colour ;
+.
+lo:White_board
+  a owl:Class ;
+  rdfs:label "White board" ;
+  rdfs:subClassOf lo:Background ;
+.
+lo:Whiteboard
+  a owl:Class ;
+  rdfs:label "Whiteboard" ;
+  rdfs:subClassOf lo:Furniture ;
+.
+lo:Whiteboard_1
+  a lo:Whiteboard ;
+  rdfs:label "Whiteboard_1" ;
+.
+lo:Woman
+  a owl:Class ;
+  rdfs:label "Woman" ;
+  rdfs:subClassOf lo:Character ;
+.
+lo:Woman_1
+  a lo:Woman ;
+  rdfs:label "Woman_1" ;
+.
+lo:Worker
+  a owl:Class ;
+  rdfs:label "Worker" ;
+  rdfs:subClassOf lo:Character ;
+.
+lo:Worker_1
+  a lo:Worker ;
+  rdfs:label "Worker_1" ;
+.
+lo:cabinetHasBrand
+  a owl:ObjectProperty ;
+  rdfs:label "cabinetHasBrand" ;
+  rdfs:range lo:Brand ;
+.
+lo:cabinetHasWarranty
+  a owl:ObjectProperty ;
+  rdfs:label "cabinetHasWarranty" ;
+  rdfs:range lo:Warranty ;
+.
+lo:characterIsASceneObject
+  a owl:ObjectProperty ;
+  rdfs:label "characterIsASceneObject" ;
+
+.
+lo:electricappliancesHasBrand
+  a owl:ObjectProperty ;
+  rdfs:domain lo:ElectricAppliances ;
+  rdfs:label "electricappliancesHasBrand" ;
+  rdfs:range lo:Brand ;
+.
+lo:electricappliancesHasWarranty
+  a owl:ObjectProperty ;
+  rdfs:domain lo:ElectricAppliances ;
+  rdfs:label "electricappliancesHasWarranty" ;
+  rdfs:range lo:Warranty ;
+
+.
+lo:furnitureHasBrand
+  a owl:ObjectProperty ;
+  rdfs:domain lo:Furniture ;
+  rdfs:label "furnitureHasBrand" ;
+  rdfs:range lo:Brand ;
+.
+lo:furnitureHasWarranty
+  a owl:ObjectProperty ;
+  rdfs:domain lo:Furniture ;
+  rdfs:label "furnitureHasWarranty" ;
+  rdfs:range lo:Warranty ;
 .
 rdf:Property
   rdf:type owl:Class ;
