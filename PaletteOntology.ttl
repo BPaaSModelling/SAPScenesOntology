@@ -835,6 +835,10 @@ po:PaletteCategory
   lo:excludeFromGraphicalSelection true ;
   rdfs:subClassOf owl:Thing ;
 .
+po:PaletteCategory_1
+  rdf:type po:PaletteCategory ;
+  rdfs:label "TransportationElement" ;
+.
 po:PaletteCategory_ArchiMate
   a owl:Class ;
   rdfs:label "ArchiMate" ;
