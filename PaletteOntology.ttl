@@ -532,6 +532,15 @@ po:ElectricAppliances
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:ElectricAppliances ;
   rdfs:label "Electric Appliances" ;
 .
+po:Executes
+  a po:PaletteConnector ;
+  po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_Executes.PNG" ;
+  po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Executes ;
+  rdfs:label "Executes" ;
+.
 po:ExtractorHood
   a po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
@@ -1589,8 +1598,26 @@ po:graphicalElementY
   rdfs:label "Y coordinate" ;
   rdfs:range xsd:string ;
 .
+po:hasNote
+  a po:PaletteConnector ;
+  po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_hasNote.PNG" ;
+  po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct lo:hasNote ;
+  rdfs:label "hasNote" ;
+.
 po:hasParentDataDocument
   a rdf:Property ;
+.
+po:hasRelation
+  a po:PaletteConnector ;
+  po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_hasRelation.PNG" ;
+  po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
+  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct lo:hasRelation ;
+  rdfs:label "hasRelation" ;
 .
 po:isRelatedToICFStandard
   a rdf:Property ;

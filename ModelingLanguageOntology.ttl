@@ -520,6 +520,11 @@ lo:Electrolux
   a lo:Brand ;
   rdfs:label "Electrolux" ;
 .
+lo:Executes
+  a owl:Class ;
+  rdfs:label "Executes" ;
+  rdfs:subClassOf lo:ModelingRelation ;
+.
 lo:ExtractorHood
   a owl:Class ;
   rdfs:label "Extractor Hood" ;
@@ -1315,9 +1320,19 @@ lo:hasNewProperty
   lo:hasValue "Prova" ;
   rdfs:range xsd:decimal ;
 .
+lo:hasNote
+  a owl:Class ;
+  rdfs:label "hasNote" ;
+  rdfs:subClassOf lo:ModelingRelation ;
+.
 lo:hasPaletteCategory
   a owl:ObjectProperty ;
   rdfs:label "A modeling view has palette categories" ;
+.
+lo:hasRelation
+  a owl:Class ;
+  rdfs:label "hasRelation" ;
+  rdfs:subClassOf lo:ModelingRelation ;
 .
 lo:hasValue
   a owl:DatatypeProperty ;
