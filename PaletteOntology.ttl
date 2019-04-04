@@ -835,10 +835,6 @@ po:PaletteCategory
   lo:excludeFromGraphicalSelection true ;
   rdfs:subClassOf owl:Thing ;
 .
-po:PaletteCategory_1
-  rdf:type po:PaletteCategory ;
-  rdfs:label "TransportationElement" ;
-.
 po:PaletteCategory_ArchiMate
   a owl:Class ;
   rdfs:label "ArchiMate" ;
@@ -886,6 +882,14 @@ po:RobotArm
 po:SAPScene
   a lo:ModelingLanguage ;
   rdfs:label "SAPScene" ;
+.
+po:SAPScenesElements
+  a po:PaletteCategory ;
+  rdfs:label "SAPScenesElements" ;
+.
+po:SAPScenesRelations
+  a po:PaletteCategory ;
+  rdfs:label "SAPScenesRelations" ;
 .
 po:SequenceFlow
   a po:PaletteConnector ;
