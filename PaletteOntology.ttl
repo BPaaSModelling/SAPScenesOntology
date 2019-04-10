@@ -17,23 +17,23 @@ lo:Character
   rdfs:subClassOf <http://fhnw.ch/SapScenesOntology#sceneObject> ;
 .
 <http://fhnw.ch/modelingEnvironment/PaletteOntology>
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   owl:imports <http://fhnw.ch/modelingEnvironment/LanguageOntology> ;
 .
 po:Accessory
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Accessory.PNG" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Accessory.PNG" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Accessory ;
   rdfs:label "Accessory" ;
 .
 po:Airport
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Airport.PNG" ;
@@ -41,36 +41,36 @@ po:Airport
   po:paletteConstructHasParentPaletteConstruct po:Background ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Airport ;
   rdfs:label "Airport" ;
 .
 po:Arrow
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Arrow.PNG" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Arrow.PNG" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Arrow ;
   rdfs:label "Arrow" ;
 .
 po:Background
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Background.PNG" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Background.PNG" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Background ;
   rdfs:label "Background" ;
 .
 po:Bar
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Bar.PNG" ;
@@ -78,12 +78,12 @@ po:Bar
   po:paletteConstructHasParentPaletteConstruct po:Background ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Bar ;
   rdfs:label "Bar" ;
 .
 po:Bench
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Bench.PNG" ;
@@ -91,12 +91,12 @@ po:Bench
   po:paletteConstructHasParentPaletteConstruct po:Furniture ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Bench ;
   rdfs:label "Bench" ;
 .
 po:BigHouse
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "BigHouse.PNG" ;
@@ -104,12 +104,12 @@ po:BigHouse
   po:paletteConstructHasParentPaletteConstruct po:Building ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:BigHouse ;
   rdfs:label "Big House" ;
 .
 po:BigSign
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "BigSign.PNG" ;
@@ -117,12 +117,12 @@ po:BigSign
   po:paletteConstructHasParentPaletteConstruct po:Sign ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:BigSign ;
   rdfs:label "Big Sign" ;
 .
 po:Bike
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Bike.png" ;
@@ -130,24 +130,24 @@ po:Bike
   po:paletteConstructHasParentPaletteConstruct po:TransportationElement ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Bike ;
   rdfs:label "Bike" ;
 .
 po:Building
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Building.PNG" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Building.PNG" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Building ;
   rdfs:label "Building" ;
 .
 po:Bus
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Bus.PNG" ;
@@ -155,12 +155,12 @@ po:Bus
   po:paletteConstructHasParentPaletteConstruct po:TransportationElement ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Bus ;
   rdfs:label "Bus" ;
 .
 po:BusinessMan
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "BusinessMan.PNG" ;
@@ -168,12 +168,12 @@ po:BusinessMan
   po:paletteConstructHasParentPaletteConstruct po:Character ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:BusinessMan ;
   rdfs:label "Business Man" ;
 .
 po:BusinessWoman
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "BusinessWoman.PNG" ;
@@ -181,12 +181,12 @@ po:BusinessWoman
   po:paletteConstructHasParentPaletteConstruct po:Character ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:BusinessWoman ;
   rdfs:label "Business Woman" ;
 .
 po:Cabinets
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Cabinets.PNG" ;
@@ -194,12 +194,12 @@ po:Cabinets
   po:paletteConstructHasParentPaletteConstruct po:Furniture ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Cabinets ;
   rdfs:label "Cabinets" ;
 .
 po:Cafe
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Cafe.PNG" ;
@@ -207,12 +207,12 @@ po:Cafe
   po:paletteConstructHasParentPaletteConstruct po:Background ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Cafe ;
   rdfs:label "Cafe" ;
 .
 po:Car
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Car.PNG" ;
@@ -220,12 +220,12 @@ po:Car
   po:paletteConstructHasParentPaletteConstruct po:TransportationElement ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Car ;
   rdfs:label "Car" ;
 .
 po:CashRegisterTable
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "CashRegisterTable.PNG" ;
@@ -233,12 +233,12 @@ po:CashRegisterTable
   po:paletteConstructHasParentPaletteConstruct po:Furniture ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:CashRegisterTable ;
   rdfs:label "Cash Register Table" ;
 .
 po:Category_Activities
-  a po:PaletteCategory ;
+  rdf:type po:PaletteCategory_BPMN ;
   po:categoryIsShownInModelingView lo:ProcessModelingView ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteCategoryIsUsedInModelingLanguage lo:BPaaS_ModelingLanguage ;
@@ -247,7 +247,7 @@ po:Category_Activities
   rdfs:label "Activities" ;
 .
 po:Category_Connectors
-  a po:PaletteCategory ;
+  rdf:type po:PaletteCategory_BPMN ;
   po:categoryIsShownInModelingView lo:ProcessModelingView ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteCategoryIsUsedInModelingLanguage lo:BPaaS_ModelingLanguage ;
@@ -260,7 +260,7 @@ po:Category_Connectors
   rdfs:label "Connectors" ;
 .
 po:Category_Data
-  a po:PaletteCategory ;
+  rdf:type po:PaletteCategory_BPMN ;
   po:categoryIsShownInModelingView lo:ProcessModelingView ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteCategoryIsUsedInModelingLanguage lo:BPaaS_ModelingLanguage ;
@@ -269,7 +269,7 @@ po:Category_Data
   rdfs:label "Data" ;
 .
 po:Category_Events
-  a po:PaletteCategory ;
+  rdf:type po:PaletteCategory_BPMN ;
   po:categoryIsShownInModelingView lo:ProcessModelingView ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteCategoryIsUsedInModelingLanguage lo:BPaaS_ModelingLanguage ;
@@ -277,7 +277,7 @@ po:Category_Events
   rdfs:label "Events" ;
 .
 po:Category_Gateways
-  a po:PaletteCategory ;
+  rdf:type po:PaletteCategory_BPMN ;
   po:categoryIsShownInModelingView lo:ProcessModelingView ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteCategoryIsUsedInModelingLanguage lo:BPaaS_ModelingLanguage ;
@@ -285,7 +285,7 @@ po:Category_Gateways
   rdfs:label "Gateways" ;
 .
 po:Category_Groups
-  a po:PaletteCategory ;
+  rdf:type po:PaletteCategory_BPMN ;
   po:categoryIsShownInModelingView lo:ProcessModelingView ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteCategoryIsUsedInModelingLanguage lo:BPaaS_ModelingLanguage ;
@@ -294,7 +294,7 @@ po:Category_Groups
   rdfs:label "Groups" ;
 .
 po:Category_Swimlanes
-  a po:PaletteCategory ;
+  rdf:type po:PaletteCategory_BPMN ;
   po:categoryIsShownInModelingView lo:ProcessModelingView ;
   po:paletteCategoryIsUsedInModelingLanguage <http://fhnw.ch/modelingEnvironment/LanguageOntology#BPMN_2.0> ;
   po:paletteCategoryIsUsedInModelingLanguage lo:BPaaS_ModelingLanguage ;
@@ -302,7 +302,7 @@ po:Category_Swimlanes
   rdfs:label "Swimlanes" ;
 .
 po:Chair
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Chair.PNG" ;
@@ -310,24 +310,24 @@ po:Chair
   po:paletteConstructHasParentPaletteConstruct po:Furniture ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Chair ;
   rdfs:label "Chair" ;
 .
 po:Character
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Character.PNG" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Character.PNG" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Character ;
   rdfs:label "Character" ;
 .
 po:City
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "City.PNG" ;
@@ -335,12 +335,12 @@ po:City
   po:paletteConstructHasParentPaletteConstruct po:Background ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:City ;
   rdfs:label "City" ;
 .
 po:CoffeeCorner
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "CoffeeCorner.PNG" ;
@@ -348,12 +348,12 @@ po:CoffeeCorner
   po:paletteConstructHasParentPaletteConstruct po:Background ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:CoffeeCorner ;
   rdfs:label "Coffee Corner" ;
 .
 po:CoffeeCup
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "CoffeeCup.PNG" ;
@@ -361,12 +361,12 @@ po:CoffeeCup
   po:paletteConstructHasParentPaletteConstruct po:Accessory ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:CoffeeCup ;
   rdfs:label "Coffee Cup" ;
 .
 po:Couch
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Couch.PNG" ;
@@ -374,12 +374,12 @@ po:Couch
   po:paletteConstructHasParentPaletteConstruct po:Furniture ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Couch ;
   rdfs:label "Couch" ;
 .
 po:Countryside
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Countryside.PNG" ;
@@ -387,12 +387,12 @@ po:Countryside
   po:paletteConstructHasParentPaletteConstruct po:Background ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Countryside ;
   rdfs:label "Countryside" ;
 .
 po:CryingBubble
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "CryingBubble.PNG" ;
@@ -400,12 +400,12 @@ po:CryingBubble
   po:paletteConstructHasParentPaletteConstruct po:SpeechBubble ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:CryingBubble ;
   rdfs:label "Crying Bubble" ;
 .
 po:DesktopSetting
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "DesktopSetting.PNG" ;
@@ -413,24 +413,24 @@ po:DesktopSetting
   po:paletteConstructHasParentPaletteConstruct po:Furniture ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:DesktopSetting ;
   rdfs:label "Desktop Setting" ;
 .
 po:Device
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Device.PNG" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Device.PNG" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Device ;
   rdfs:label "Device" ;
 .
 po:DirectionSign
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "DirectionSign.PNG" ;
@@ -438,12 +438,12 @@ po:DirectionSign
   po:paletteConstructHasParentPaletteConstruct po:Sign ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:DirectionSign ;
   rdfs:label "Direction Sign" ;
 .
 po:Dishwasher
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Dishwasher.PNG" ;
@@ -451,12 +451,12 @@ po:Dishwasher
   po:paletteConstructHasParentPaletteConstruct po:ElectricAppliances ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Dishwasher ;
   rdfs:label "Dishwasher" ;
 .
 po:Doctor
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Doctor.PNG" ;
@@ -464,12 +464,12 @@ po:Doctor
   po:paletteConstructHasParentPaletteConstruct po:Character ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Doctor ;
   rdfs:label "Doctor" ;
 .
 po:DoubleDoorFridge
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "DoubleDoorFridge.PNG" ;
@@ -477,12 +477,12 @@ po:DoubleDoorFridge
   po:paletteConstructHasParentPaletteConstruct po:Fridge ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:DoubleDoorFridge ;
   rdfs:label "Double Door Fridge" ;
 .
 po:Down
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Down.PNG" ;
@@ -490,12 +490,12 @@ po:Down
   po:paletteConstructHasParentPaletteConstruct po:Arrow ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Down ;
   rdfs:label "Down" ;
 .
 po:Dresser
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Dresser.PNG" ;
@@ -503,12 +503,12 @@ po:Dresser
   po:paletteConstructHasParentPaletteConstruct po:Furniture ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Dresser ;
   rdfs:label "Dresser" ;
 .
 po:Drone
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Drone.PNG" ;
@@ -516,33 +516,33 @@ po:Drone
   po:paletteConstructHasParentPaletteConstruct po:TransportationElement ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Drone ;
   rdfs:label "Drone" ;
 .
 po:ElectricAppliances
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "ElectricAppliances.PNG" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_ElectricAppliances.PNG" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:ElectricAppliances ;
   rdfs:label "Electric Appliances" ;
 .
 po:Executes
-  a po:PaletteConnector ;
+  rdf:type po:PaletteConnector ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Executes.PNG" ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Executes ;
   rdfs:label "Executes" ;
 .
 po:ExtractorHood
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "ExtractorHood.PNG" ;
@@ -550,12 +550,12 @@ po:ExtractorHood
   po:paletteConstructHasParentPaletteConstruct po:ElectricAppliances ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:ExtractorHood ;
   rdfs:label "Extractor Hood" ;
 .
 po:Factory
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Factory.PNG" ;
@@ -563,12 +563,12 @@ po:Factory
   po:paletteConstructHasParentPaletteConstruct po:Building ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Factory ;
   rdfs:label "Factory" ;
 .
 po:Flipchart
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Flipchart.PNG" ;
@@ -576,12 +576,12 @@ po:Flipchart
   po:paletteConstructHasParentPaletteConstruct po:Furniture ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Flipchart ;
   rdfs:label "Flipchart" ;
 .
 po:Forklift
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Forklift.PNG" ;
@@ -589,12 +589,12 @@ po:Forklift
   po:paletteConstructHasParentPaletteConstruct po:TransportationElement ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Forklift ;
   rdfs:label "Forklift" ;
 .
 po:Fridge
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Fridge.PNG" ;
@@ -602,24 +602,24 @@ po:Fridge
   po:paletteConstructHasParentPaletteConstruct po:Furniture ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Fridge ;
   rdfs:label "Fridge" ;
 .
 po:Furniture
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Furniture.PNG" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Furniture.PNG" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Furniture ;
   rdfs:label "Furniture" ;
 .
 po:Gong
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Gong.PNG" ;
@@ -627,12 +627,12 @@ po:Gong
   po:paletteConstructHasParentPaletteConstruct po:Furniture ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Gong ;
   rdfs:label "Gong" ;
 .
 po:Heater
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Heater.PNG" ;
@@ -640,12 +640,12 @@ po:Heater
   po:paletteConstructHasParentPaletteConstruct po:ElectricAppliances ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Heater ;
   rdfs:label "Dishwasher" ;
 .
 po:HighCabinet
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "HighCabinet.PNG" ;
@@ -653,12 +653,12 @@ po:HighCabinet
   po:paletteConstructHasParentPaletteConstruct po:Cabinets ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:HighCabinet ;
   rdfs:label "High Cabinet" ;
 .
 po:HighCabinetForStorage
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "HighCabinetForStorage.PNG" ;
@@ -666,12 +666,12 @@ po:HighCabinetForStorage
   po:paletteConstructHasParentPaletteConstruct po:HighCabinet ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:HighCabinetForStorage ;
   rdfs:label "High Cabinet for Storage" ;
 .
 po:HighCabinetWithOven
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "HighCabinetWithOven.PNG" ;
@@ -679,12 +679,12 @@ po:HighCabinetWithOven
   po:paletteConstructHasParentPaletteConstruct po:HighCabinet ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:HighCabinetWithOven ;
   rdfs:label "High Cabinet with Oven" ;
 .
 po:House
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "House.PNG" ;
@@ -692,26 +692,26 @@ po:House
   po:paletteConstructHasParentPaletteConstruct po:Building ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:House ;
   rdfs:label "House" ;
 .
 po:ICFStandardHasModelThumbnail
-  a rdf:Property ;
-  a owl:DatatypeProperty ;
+  rdf:type rdf:Property ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:range xsd:string ;
   rdfs:range "gnICFStandardForCanvas.png" ;
 .
 po:ICFStandardHasPaletteThumbnail
-  a rdf:Property ;
+  rdf:type rdf:Property ;
   rdfs:range xsd:string ;
   rdfs:range "gnICFStandardForPalette.png" ;
 .
 po:ICFStandardhasModelThumbnail
-  a rdf:Property ;
+  rdf:type rdf:Property ;
 .
 po:Kitchen
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Kitchen.PNG" ;
@@ -719,17 +719,17 @@ po:Kitchen
   po:paletteConstructHasParentPaletteConstruct po:Background ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Kitchen ;
   rdfs:label "Kitchen" ;
 .
 po:KoGuDataObject
-  a po:PaletteConstruct ;
+  rdf:type po:PaletteConstruct ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct dsml4ptm:KoGuDataObject ;
   rdfs:label "KoGu Data Object" ;
 .
 po:Laptop
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Laptop.png" ;
@@ -737,12 +737,12 @@ po:Laptop
   po:paletteConstructHasParentPaletteConstruct po:Device ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Laptop ;
   rdfs:label "Laptop" ;
 .
 po:LaptopSetting
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "LaptopSetting.PNG" ;
@@ -750,12 +750,12 @@ po:LaptopSetting
   po:paletteConstructHasParentPaletteConstruct po:Furniture ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:LaptopSetting ;
   rdfs:label "Laptop Setting" ;
 .
 po:Left
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Left.PNG" ;
@@ -763,12 +763,12 @@ po:Left
   po:paletteConstructHasParentPaletteConstruct po:Arrow ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Left ;
   rdfs:label "Left" ;
 .
 po:LowerCabinet
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "LowerCabinet.PNG" ;
@@ -776,12 +776,12 @@ po:LowerCabinet
   po:paletteConstructHasParentPaletteConstruct po:Cabinets ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:LowerCabinet ;
   rdfs:label "Lower Cabinet" ;
 .
 po:LowerCabinetWithCookingRange
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "LowerCabinetWithCookingRange.PNG" ;
@@ -789,12 +789,12 @@ po:LowerCabinetWithCookingRange
   po:paletteConstructHasParentPaletteConstruct po:LowerCabinet ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:LowerCabinetWithCookingRange ;
   rdfs:label "Lower Cabinet with Cooking Range" ;
 .
 po:LowerCabinetWithShelves
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "LowerCabinetWithShelves.PNG" ;
@@ -802,12 +802,12 @@ po:LowerCabinetWithShelves
   po:paletteConstructHasParentPaletteConstruct po:LowerCabinet ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:LowerCabinetWithShelves ;
   rdfs:label "Lower Cabinet with Shelves" ;
 .
 po:LowerCabinetWithSinkAndWasteDisposal
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "LowerCabinetWithSinkAndWasteDisposal.PNG" ;
@@ -815,12 +815,12 @@ po:LowerCabinetWithSinkAndWasteDisposal
   po:paletteConstructHasParentPaletteConstruct po:LowerCabinet ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:LowerCabinetWithSinkAndWasteDisposal ;
   rdfs:label "Lower Cabinet with Sink and Waste Disposal" ;
 .
 po:MallInside
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "MallInside.PNG" ;
@@ -828,12 +828,12 @@ po:MallInside
   po:paletteConstructHasParentPaletteConstruct po:Background ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:MallInside ;
   rdfs:label "Mall Inside" ;
 .
 po:Man
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Man.PNG" ;
@@ -841,12 +841,12 @@ po:Man
   po:paletteConstructHasParentPaletteConstruct po:Character ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Man ;
   rdfs:label "Man" ;
 .
 po:MeetingRoom
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "MeetingRoom.PNG" ;
@@ -854,22 +854,22 @@ po:MeetingRoom
   po:paletteConstructHasParentPaletteConstruct po:Background ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:MeetingRoom ;
   rdfs:label "Meeting Room" ;
 .
 po:MessageFlow
-  a po:PaletteConnector ;
-  po:paletteConnectorArrowBaseUsesImage true ;
+  rdf:type po:PaletteConnector ;
+  po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
   po:paletteConstructHasPaletteThumbnail "Message.png" ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:MessageFlow ;
-  po:paletteElementUsesImage true ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
   rdfs:label "Message Flow" ;
 .
 po:MobilePhone
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "MobilePhone.PNG" ;
@@ -877,12 +877,12 @@ po:MobilePhone
   po:paletteConstructHasParentPaletteConstruct po:Device ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:MobilePhone ;
   rdfs:label "Mobile Phone" ;
 .
 po:Monitor
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Monitor.PNG" ;
@@ -890,12 +890,12 @@ po:Monitor
   po:paletteConstructHasParentPaletteConstruct po:Device ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Monitor ;
   rdfs:label "Monitor" ;
 .
 po:Office
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Office.PNG" ;
@@ -903,12 +903,12 @@ po:Office
   po:paletteConstructHasParentPaletteConstruct po:Background ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Office ;
   rdfs:label "Office" ;
 .
 po:OfficeBuilding
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "OfficeBuilding.PNG" ;
@@ -916,12 +916,12 @@ po:OfficeBuilding
   po:paletteConstructHasParentPaletteConstruct po:Building ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:OfficeBuilding ;
   rdfs:label "Office Building" ;
 .
 po:OldMan
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "OldMan.PNG" ;
@@ -929,12 +929,12 @@ po:OldMan
   po:paletteConstructHasParentPaletteConstruct po:Character ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:OldMan ;
   rdfs:label "Old Man" ;
 .
 po:OldWoman
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "OldWoman.PNG" ;
@@ -942,12 +942,12 @@ po:OldWoman
   po:paletteConstructHasParentPaletteConstruct po:Character ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:OldWoman ;
   rdfs:label "Old Woman" ;
 .
 po:PackageBig
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "PackageBig.PNG" ;
@@ -955,12 +955,12 @@ po:PackageBig
   po:paletteConstructHasParentPaletteConstruct po:Accessory ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:PackageBig ;
   rdfs:label "Package Big" ;
 .
 po:PackageMedium
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "PackageMedium.PNG" ;
@@ -968,12 +968,12 @@ po:PackageMedium
   po:paletteConstructHasParentPaletteConstruct po:Accessory ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:PackageMedium ;
   rdfs:label "Package Medium" ;
 .
 po:PackageSmall
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "PackageSmall.PNG" ;
@@ -981,49 +981,49 @@ po:PackageSmall
   po:paletteConstructHasParentPaletteConstruct po:Accessory ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:PackageSmall ;
   rdfs:label "Package Small" ;
 .
 po:PaletteCategory
-  a owl:Class ;
-  lo:excludeFromGraphicalSelection true ;
+  rdf:type owl:Class ;
+  lo:excludeFromGraphicalSelection "true"^^xsd:boolean ;
   rdfs:subClassOf owl:Thing ;
 .
 po:PaletteCategory_ArchiMate
-  a owl:Class ;
+  rdf:type owl:Class ;
   rdfs:label "ArchiMate" ;
   rdfs:subClassOf po:PaletteCategory ;
 .
 po:PaletteCategory_BPMN
-  a owl:Class ;
+  rdf:type owl:Class ;
   rdfs:label "BPMN" ;
   rdfs:subClassOf po:PaletteCategory ;
 .
 po:PaletteCategory_CMMN
-  a owl:Class ;
+  rdf:type owl:Class ;
   rdfs:label "CMMN" ;
   rdfs:subClassOf po:PaletteCategory ;
 .
 po:PaletteConnector
-  a owl:Class ;
-  lo:excludeFromGraphicalSelection true ;
+  rdf:type owl:Class ;
+  lo:excludeFromGraphicalSelection "true"^^xsd:boolean ;
   rdfs:label "Palette Connector" ;
   rdfs:subClassOf po:PaletteConstruct ;
 .
 po:PaletteConstruct
-  a owl:Class ;
-  lo:excludeFromGraphicalSelection true ;
+  rdf:type owl:Class ;
+  lo:excludeFromGraphicalSelection "true"^^xsd:boolean ;
   rdfs:subClassOf owl:Thing ;
 .
 po:PaletteElement
-  a owl:Class ;
-  lo:excludeFromGraphicalSelection false ;
+  rdf:type owl:Class ;
+  lo:excludeFromGraphicalSelection "false"^^xsd:boolean ;
   rdfs:label "Palette Element" ;
   rdfs:subClassOf po:PaletteConstruct ;
 .
 po:PalletStack
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "PalletStack.PNG" ;
@@ -1031,24 +1031,24 @@ po:PalletStack
   po:paletteConstructHasParentPaletteConstruct po:Accessory ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:PalletStack ;
   rdfs:label "Pallet Stack" ;
 .
 po:Process
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Process.PNG" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Process.PNG" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Process ;
   rdfs:label "Process" ;
 .
 po:Right
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Right.PNG" ;
@@ -1056,12 +1056,12 @@ po:Right
   po:paletteConstructHasParentPaletteConstruct po:Arrow ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Right ;
   rdfs:label "Right" ;
 .
 po:RobotArm
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "RobotArm.PNG" ;
@@ -1069,34 +1069,34 @@ po:RobotArm
   po:paletteConstructHasParentPaletteConstruct po:Accessory ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:RobotArm ;
   rdfs:label "Robot Arm" ;
 .
 po:SAPScene
-  a lo:ModelingLanguage ;
+  rdf:type lo:ModelingLanguage ;
   rdfs:label "SAPScene" ;
 .
 po:SAPScenesElements
-  a po:PaletteCategory ;
-  rdfs:label "SAPScenesElements" ;
+  rdf:type po:PaletteCategory ;
+  rdfs:label "SAP Scenes Elements" ;
 .
 po:SAPScenesRelations
-  a po:PaletteCategory ;
-  rdfs:label "SAPScenesRelations" ;
+  rdf:type po:PaletteCategory ;
+  rdfs:label "SAP Scenes Relations" ;
 .
 po:SequenceFlow
-  a po:PaletteConnector ;
-  po:paletteConnectorArrowBaseUsesImage true ;
+  rdf:type po:PaletteConnector ;
+  po:paletteConnectorArrowBaseUsesImage "true"^^xsd:boolean ;
   po:paletteConstructHasPaletteThumbnail "Sequence.png" ;
   po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:SequenceFlow ;
-  po:paletteElementUsesImage true ;
+  po:paletteElementUsesImage "true"^^xsd:boolean ;
   rdfs:label "Sequence Flow" ;
 .
 po:ShippingDock
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "ShippingDock.PNG" ;
@@ -1104,12 +1104,12 @@ po:ShippingDock
   po:paletteConstructHasParentPaletteConstruct po:Background ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:ShippingDock ;
   rdfs:label "Shipping Dock" ;
 .
 po:ShoppingCart
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "ShoppingCart.PNG" ;
@@ -1117,24 +1117,24 @@ po:ShoppingCart
   po:paletteConstructHasParentPaletteConstruct po:Furniture ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:ShoppingCart ;
   rdfs:label "Shopping Cart" ;
 .
 po:Sign
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Sign.PNG" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Sign.PNG" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Sign ;
   rdfs:label "Sign" ;
 .
 po:SingleDoorFridge
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "SingleDoorFridge.PNG" ;
@@ -1142,12 +1142,12 @@ po:SingleDoorFridge
   po:paletteConstructHasParentPaletteConstruct po:Fridge ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:SingleDoorFridge ;
   rdfs:label "Single Door Fridge" ;
 .
 po:SmallSign
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "SmallSign.PNG" ;
@@ -1155,12 +1155,12 @@ po:SmallSign
   po:paletteConstructHasParentPaletteConstruct po:Sign ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:SmallSign ;
   rdfs:label "Small Sign" ;
 .
 po:SodaMaschine
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "SodaMaschine.PNG" ;
@@ -1168,24 +1168,24 @@ po:SodaMaschine
   po:paletteConstructHasParentPaletteConstruct po:Furniture ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:SodaMaschine ;
   rdfs:label "Soda Maschine" ;
 .
 po:SpeechBubble
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "SpeechBubble.PNG" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_SpeechBubble.PNG" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:SpeechBubble ;
   rdfs:label "Speech Bubble" ;
 .
 po:Speech_Bubble
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Speech_Bubble.PNG" ;
@@ -1193,12 +1193,12 @@ po:Speech_Bubble
   po:paletteConstructHasParentPaletteConstruct po:SpeechBubble ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Speech_Bubble ;
   rdfs:label "Speech Bubble" ;
 .
 po:Stool
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Stool.PNG" ;
@@ -1206,12 +1206,12 @@ po:Stool
   po:paletteConstructHasParentPaletteConstruct po:Furniture ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Stool ;
   rdfs:label "Stool" ;
 .
 po:StorageRoom
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "StorageRoom.PNG" ;
@@ -1219,12 +1219,12 @@ po:StorageRoom
   po:paletteConstructHasParentPaletteConstruct po:Background ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:StorageRoom ;
   rdfs:label "Storage Room" ;
 .
 po:Store
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Store.PNG" ;
@@ -1232,12 +1232,12 @@ po:Store
   po:paletteConstructHasParentPaletteConstruct po:Building ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Store ;
   rdfs:label "Store" ;
 .
 po:StoreAisle
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "StoreAisle.PNG" ;
@@ -1245,12 +1245,12 @@ po:StoreAisle
   po:paletteConstructHasParentPaletteConstruct po:Background ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:StoreAisle ;
   rdfs:label "Store Aisle" ;
 .
 po:Student
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Student.PNG" ;
@@ -1258,12 +1258,12 @@ po:Student
   po:paletteConstructHasParentPaletteConstruct po:Character ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Student ;
   rdfs:label "Student" ;
 .
 po:Subway
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Subway.PNG" ;
@@ -1271,12 +1271,12 @@ po:Subway
   po:paletteConstructHasParentPaletteConstruct po:Background ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Subway ;
   rdfs:label "Subway" ;
 .
 po:Table
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Table.PNG" ;
@@ -1284,12 +1284,12 @@ po:Table
   po:paletteConstructHasParentPaletteConstruct po:Furniture ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Table ;
   rdfs:label "Table" ;
 .
 po:Tablet
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Tablet.PNG" ;
@@ -1297,24 +1297,24 @@ po:Tablet
   po:paletteConstructHasParentPaletteConstruct po:Device ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Tablet ;
   rdfs:label "Tablet" ;
 .
 po:Team
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Team.PNG" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Team.PNG" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Team ;
   rdfs:label "Team" ;
 .
 po:ThinkingBubble
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "ThinkingBubble.PNG" ;
@@ -1322,12 +1322,12 @@ po:ThinkingBubble
   po:paletteConstructHasParentPaletteConstruct po:SpeechBubble ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:ThinkingBubble ;
   rdfs:label "Thinking Bubble" ;
 .
 po:TowerBuilding
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "TowerBuilding.PNG" ;
@@ -1335,12 +1335,12 @@ po:TowerBuilding
   po:paletteConstructHasParentPaletteConstruct po:Building ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:TowerBuilding ;
   rdfs:label "Tower Building" ;
 .
 po:Train
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Train.PNG" ;
@@ -1348,12 +1348,12 @@ po:Train
   po:paletteConstructHasParentPaletteConstruct po:TransportationElement ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Train ;
   rdfs:label "Train" ;
 .
 po:TrainStation
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "TrainStation.PNG" ;
@@ -1361,24 +1361,24 @@ po:TrainStation
   po:paletteConstructHasParentPaletteConstruct po:Building ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:TrainStation ;
   rdfs:label "Train Station" ;
 .
 po:TransportationElement
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "TransportationElement.PNG" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_TransportationElement.PNG" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:TransportationElement ;
   rdfs:label "Transportation Element" ;
 .
 po:Trolley
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Trolley.PNG" ;
@@ -1386,12 +1386,12 @@ po:Trolley
   po:paletteConstructHasParentPaletteConstruct po:TransportationElement ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Trolley ;
   rdfs:label "Trolley" ;
 .
 po:Truck
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Truck.PNG" ;
@@ -1399,12 +1399,12 @@ po:Truck
   po:paletteConstructHasParentPaletteConstruct po:TransportationElement ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Truck ;
   rdfs:label "Truck" ;
 .
 po:TruckDock
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "TruckDock.PNG" ;
@@ -1412,12 +1412,12 @@ po:TruckDock
   po:paletteConstructHasParentPaletteConstruct po:Background ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:TruckDock ;
   rdfs:label "Truck Dock" ;
 .
 po:TruckDriver
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "TruckDriver.PNG" ;
@@ -1425,12 +1425,12 @@ po:TruckDriver
   po:paletteConstructHasParentPaletteConstruct po:Character ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:TruckDriver ;
   rdfs:label "Truck Driver" ;
 .
 po:Up
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Up.PNG" ;
@@ -1438,12 +1438,12 @@ po:Up
   po:paletteConstructHasParentPaletteConstruct po:Arrow ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Up ;
   rdfs:label "Up" ;
 .
 po:WallCabinet
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "WallCabinet.PNG" ;
@@ -1451,12 +1451,12 @@ po:WallCabinet
   po:paletteConstructHasParentPaletteConstruct po:Cabinets ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:WallCabinet ;
   rdfs:label "Wall Cabinet" ;
 .
 po:WallCabinetWithGlass
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "WallCabinetWithGlass.PNG" ;
@@ -1464,12 +1464,12 @@ po:WallCabinetWithGlass
   po:paletteConstructHasParentPaletteConstruct po:WallCabinet ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:WallCabinetWithGlass ;
   rdfs:label "Wall Cabinet with Glass" ;
 .
 po:WallCabinetWithShelvesAndNoDoor
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "WallCabinetWithShelvesAndNoDoor.PNG" ;
@@ -1477,12 +1477,12 @@ po:WallCabinetWithShelvesAndNoDoor
   po:paletteConstructHasParentPaletteConstruct po:WallCabinet ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:WallCabinetWithShelvesAndNoDoor ;
   rdfs:label "Wall Cabinet with Shelves and No Door" ;
 .
 po:WallCabinetWithSideDoor
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "WallCabinetWithSideDoor.PNG" ;
@@ -1490,12 +1490,12 @@ po:WallCabinetWithSideDoor
   po:paletteConstructHasParentPaletteConstruct po:WallCabinet ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:WallCabinetWithSideDoor ;
   rdfs:label "Wall Cabinet with Side Door" ;
 .
 po:WallReck
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "WallReck.PNG" ;
@@ -1503,12 +1503,12 @@ po:WallReck
   po:paletteConstructHasParentPaletteConstruct po:Background ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:WallReck ;
   rdfs:label "Wall Reck" ;
 .
 po:Warehouse
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Warehouse.PNG" ;
@@ -1516,12 +1516,12 @@ po:Warehouse
   po:paletteConstructHasParentPaletteConstruct po:Building ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Warehouse ;
   rdfs:label "Warehouse" ;
 .
 po:White_board
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "White_board.PNG" ;
@@ -1529,12 +1529,12 @@ po:White_board
   po:paletteConstructHasParentPaletteConstruct po:Background ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:White_board ;
   rdfs:label "White board" ;
 .
 po:Whiteboard
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Whiteboard.PNG" ;
@@ -1542,12 +1542,12 @@ po:Whiteboard
   po:paletteConstructHasParentPaletteConstruct po:Furniture ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Whiteboard ;
   rdfs:label "Whiteboard" ;
 .
 po:Woman
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Woman.PNG" ;
@@ -1555,12 +1555,12 @@ po:Woman
   po:paletteConstructHasParentPaletteConstruct po:Character ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Woman ;
   rdfs:label "Woman" ;
 .
 po:Worker
-  a po:PaletteElement ;
+  rdf:type po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "Worker.PNG" ;
@@ -1568,197 +1568,197 @@ po:Worker
   po:paletteConstructHasParentPaletteConstruct po:Character ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Worker ;
   rdfs:label "Worker" ;
 .
 po:categoryIsShownInModelingView
-  a owl:ObjectProperty ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain po:PaletteCategory ;
   rdfs:label "A category in the palette is shown in a modeling view" ;
   rdfs:range lo:ModelingView ;
 .
 po:graphicalElementClassType
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:domain owl:Thing ;
   rdfs:label "Class Type" ;
   rdfs:range xsd:string ;
 .
 po:graphicalElementX
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:comment "The X coordinate of an element instantiated in the Canvas" ;
   rdfs:domain owl:Thing ;
   rdfs:label "X coordinate" ;
   rdfs:range xsd:string ;
 .
 po:graphicalElementY
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:comment "the Y coordinate of an element instantiated in the Canvas" ;
   rdfs:domain owl:Thing ;
   rdfs:label "Y coordinate" ;
   rdfs:range xsd:string ;
 .
 po:hasNote
-  a po:PaletteConnector ;
+  rdf:type po:PaletteConnector ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_hasNote.PNG" ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:hasNote ;
   rdfs:label "hasNote" ;
 .
 po:hasParentDataDocument
-  a rdf:Property ;
+  rdf:type rdf:Property ;
 .
 po:hasRelation
-  a po:PaletteConnector ;
+  rdf:type po:PaletteConnector ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_hasRelation.PNG" ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette "false"^^xsd:boolean ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:hasRelation ;
   rdfs:label "hasRelation" ;
 .
 po:isRelatedToICFStandard
-  a rdf:Property ;
+  rdf:type rdf:Property ;
   rdfs:range dsml4ptm:ICFStandard ;
 .
 po:languageElementIsRelatedToDomainElement
-  a owl:ObjectProperty ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain owl:Thing ;
   rdfs:label "Domain Ontology Class" ;
   rdfs:range owl:Thing ;
 .
 po:paletteCategoryIsUsedInModelingLanguage
-  a owl:ObjectProperty ;
+  rdf:type owl:ObjectProperty ;
   rdfs:label "Palette category is used in modeling language/DSML" ;
   rdfs:range lo:ModelingLanguage ;
 .
 po:paletteCategoryOrderNumber
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:domain po:PaletteCategory ;
   rdfs:label "palette category order number" ;
   rdfs:range xsd:integer ;
 .
 po:paletteConnectorArrowBaseBorderColor
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:label "Border Color of Arrow Base" ;
   rdfs:range xsd:string ;
 .
 po:paletteConnectorArrowBaseBorderThickness
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:label "Thickness of Arrow Base Border" ;
   rdfs:range xsd:string ;
 .
 po:paletteConnectorArrowBaseColor
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:label "Color of Arrow Base" ;
   rdfs:range xsd:string ;
 .
 po:paletteConnectorArrowBaseShape
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:label "Shape of Arrow Base" ;
   rdfs:range xsd:string ;
 .
 po:paletteConnectorArrowBaseURLImage
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:label "URL of Arrow Base Image" ;
   rdfs:range xsd:string ;
 .
 po:paletteConnectorArrowBaseUsesImage
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:label "Use an Image for the Base Arrow" ;
   rdfs:range xsd:boolean ;
 .
 po:paletteConnectorArrowHeadBorderColor
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:label "Border Color of Arrow Head" ;
   rdfs:range xsd:string ;
 .
 po:paletteConnectorArrowHeadBorderThickness
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:label "Thickness of Arrow Head Border" ;
   rdfs:range xsd:string ;
 .
 po:paletteConnectorArrowHeadColor
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:label "Color of Arrow Head" ;
   rdfs:range xsd:string ;
 .
 po:paletteConnectorArrowHeadShape
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:label "Shape of Arrow Head" ;
   rdfs:range xsd:string ;
 .
 po:paletteConnectorArrowHeadURLImage
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:label "URL of Arrow Head Image" ;
   rdfs:range xsd:string ;
 .
 po:paletteConnectorArrowHeadUsesImage
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:label "Use an Image for the Head Arrow" ;
   rdfs:range xsd:boolean ;
 .
 po:paletteConnectorLineColor
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:label "Connector Line Color" ;
   rdfs:range xsd:string ;
 .
 po:paletteConnectorLineThickness
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:label "Palette Line Thickness" ;
   rdfs:range xsd:string ;
 .
 po:paletteConnectorLineType
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:label "Connector Line Type" ;
   rdfs:range xsd:string ;
 .
 po:paletteConstructBelongsToModelingView
-  a owl:ObjectProperty ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain po:PaletteConstruct ;
   rdfs:label "Palette Construct Belongs To Modeling View" ;
   rdfs:range lo:ModelingView ;
 .
 po:paletteConstructHasHeight
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:domain po:PaletteConstruct ;
   rdfs:label "Height" ;
   rdfs:range xsd:integer ;
 .
 po:paletteConstructHasModelImage
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:domain po:PaletteConstruct ;
   rdfs:label "Image for the Model" ;
   rdfs:range xsd:string ;
 .
 po:paletteConstructHasPaletteThumbnail
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:domain po:PaletteConstruct ;
   rdfs:label "Thumbnail for palette" ;
   rdfs:range xsd:string ;
 .
 po:paletteConstructHasParentPaletteConstruct
-  a owl:ObjectProperty ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain po:PaletteConstruct ;
   rdfs:label "has Parent Palette Construct" ;
   rdfs:range po:PaletteConstruct ;
 .
 po:paletteConstructHasWidth
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:domain po:PaletteConstruct ;
   rdfs:label "Width" ;
   rdfs:range xsd:integer ;
 .
 po:paletteConstructIsGroupedInPaletteCategory
-  a owl:ObjectProperty ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain po:PaletteConstruct ;
   rdfs:label "Palette Construct Is Grouped In Palette Category" ;
   rdfs:range po:PaletteCategory ;
 .
 po:paletteConstructIsHiddenFromPalette
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   po:value "Prova" ;
   rdfs:domain po:PaletteCategory ;
   rdfs:domain po:PaletteConstruct ;
@@ -1766,38 +1766,38 @@ po:paletteConstructIsHiddenFromPalette
   rdfs:range xsd:boolean ;
 .
 po:paletteConstructIsRelatedToModelingLanguageConstruct
-  a owl:ObjectProperty ;
+  rdf:type owl:ObjectProperty ;
   rdfs:domain po:PaletteConstruct ;
   rdfs:label "palette construct is related to language construct" ;
   rdfs:range lo:ModelingLanguageConstruct ;
 .
 po:paletteElementBackgroundColor
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:label "Background Color" ;
   rdfs:range xsd:string ;
 .
 po:paletteElementIconPosition
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:label "Icon Position" ;
   rdfs:range xsd:string ;
 .
 po:paletteElementIconURL
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:label "Icon URL" ;
   rdfs:range xsd:string ;
 .
 po:paletteElementLabelPosition
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:label "Label position" ;
   rdfs:range xsd:string ;
 .
 po:paletteElementShape
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:label "Shape of Palette Element" ;
   rdfs:range xsd:string ;
 .
 po:paletteElementUsesImage
-  a owl:DatatypeProperty ;
+  rdf:type owl:DatatypeProperty ;
   rdfs:label "Use Images instead of Shape" ;
   rdfs:range xsd:boolean ;
 .
@@ -1809,7 +1809,7 @@ bpmn:DataType
 .
 bpmn:UserTask
   rdfs:range xsd:string ;
-  rdfs:range true ;
+  rdfs:range "true"^^xsd:boolean ;
 .
 <http://ikm-group.ch/archimeo/cmmn#DiscretionaryTask>
   rdfs:subClassOf bpmn:ManualTask ;
