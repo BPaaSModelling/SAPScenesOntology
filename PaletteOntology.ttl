@@ -16,6 +16,9 @@
 lo:Character
   rdfs:subClassOf <http://fhnw.ch/SapScenesOntology#sceneObject> ;
 .
+lo:ElectricAppliances
+  rdfs:subClassOf owl:Thing ;
+.
 <http://fhnw.ch/modelingEnvironment/PaletteOntology>
   po:paletteConstructIsHiddenFromPalette false ;
   owl:imports <http://fhnw.ch/modelingEnvironment/LanguageOntology> ;
@@ -194,7 +197,7 @@ po:Cabinets
   po:paletteConstructHasParentPaletteConstruct po:Furniture ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette true ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Cabinets ;
   rdfs:label "Cabinets" ;
 .
@@ -478,7 +481,6 @@ po:DoubleDoorFridge
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
   po:paletteConstructIsHiddenFromPalette false ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct lo:DoubleDoorFridge ;
   rdfs:label "Double Door Fridge" ;
 .
 po:Down
@@ -528,7 +530,7 @@ po:ElectricAppliances
   po:paletteConstructHasPaletteThumbnail "Thumbnail_ElectricAppliances.PNG" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsHiddenFromPalette true ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:ElectricAppliances ;
   rdfs:label "Electric Appliances" ;
 .
@@ -536,7 +538,7 @@ po:Executes
   a po:PaletteConnector ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_Executes.PNG" ;
-  po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
+  po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesRelations ;
   po:paletteConstructIsHiddenFromPalette false ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Executes ;
   rdfs:label "Executes" ;
@@ -858,16 +860,6 @@ po:MeetingRoom
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:MeetingRoom ;
   rdfs:label "Meeting Room" ;
 .
-po:MessageFlow
-  a po:PaletteConnector ;
-  po:paletteConnectorArrowBaseUsesImage true ;
-  po:paletteConstructHasPaletteThumbnail "Message.png" ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
-  po:paletteConstructIsHiddenFromPalette false ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:MessageFlow ;
-  po:paletteElementUsesImage true ;
-  rdfs:label "Message Flow" ;
-.
 po:MobilePhone
   a po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
@@ -1085,16 +1077,6 @@ po:SAPScenesRelations
   a po:PaletteCategory ;
   rdfs:label "SAP Scenes Relations" ;
 .
-po:SequenceFlow
-  a po:PaletteConnector ;
-  po:paletteConnectorArrowBaseUsesImage true ;
-  po:paletteConstructHasPaletteThumbnail "Sequence.png" ;
-  po:paletteConstructIsGroupedInPaletteCategory po:Category_Connectors ;
-  po:paletteConstructIsHiddenFromPalette false ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct bpmn:SequenceFlow ;
-  po:paletteElementUsesImage true ;
-  rdfs:label "Sequence Flow" ;
-.
 po:ShippingDock
   a po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
@@ -1143,7 +1125,6 @@ po:SingleDoorFridge
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
   po:paletteConstructIsHiddenFromPalette false ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct lo:SingleDoorFridge ;
   rdfs:label "Single Door Fridge" ;
 .
 po:SmallSign
@@ -1602,9 +1583,8 @@ po:hasNote
   a po:PaletteConnector ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_hasNote.PNG" ;
-  po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
+  po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesRelations ;
   po:paletteConstructIsHiddenFromPalette false ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct lo:hasNote ;
   rdfs:label "hasNote" ;
 .
 po:hasParentDataDocument
@@ -1614,7 +1594,7 @@ po:hasRelation
   a po:PaletteConnector ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_hasRelation.PNG" ;
-  po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
+  po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesRelations ;
   po:paletteConstructIsHiddenFromPalette false ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:hasRelation ;
   rdfs:label "hasRelation" ;

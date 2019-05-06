@@ -129,18 +129,6 @@ dsml4ptm:isPartOfKoGuDO
   owl:imports <http://ikm-group.ch/archimeo/bpaas> ;
   owl:versionInfo 1.1 ;
 .
-<http://fhnw.ch/modelingEnvironment/LanguageOntology#1Year>
-  a lo:Warranty ;
-  rdfs:label "1 Year" ;
-.
-<http://fhnw.ch/modelingEnvironment/LanguageOntology#2Years>
-  a lo:Warranty ;
-  rdfs:label "2 Years" ;
-.
-<http://fhnw.ch/modelingEnvironment/LanguageOntology#3Years>
-  a lo:Warranty ;
-  rdfs:label "3 Years" ;
-.
 lo:Accessory
   a owl:Class ;
   rdfs:subClassOf lo:SceneObject ;
@@ -225,7 +213,7 @@ lo:Bosch
 lo:Brand
   a owl:Class ;
   rdfs:label "Brand" ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf owl:Thing ;
 .
 lo:Brown
   a lo:Colour ;
@@ -293,7 +281,7 @@ lo:CabinetInstallationHeight
 lo:Cabinets
   a owl:Class ;
   rdfs:label "Cabinets" ;
-  rdfs:subClassOf lo:Furniture ;
+  rdfs:subClassOf owl:Thing ;
 .
 lo:Cabinets_1
   a lo:Cabinets ;
@@ -356,7 +344,7 @@ lo:CoffeeCup
 .
 lo:Colour
   a owl:Class ;
-  rdfs:subClassOf lo:ModelingElement ;
+  rdfs:subClassOf owl:Thing ;
 .
 lo:CombinationNotAllowed
   a owl:Class ;
@@ -476,15 +464,6 @@ lo:DocumentKnowledgeModelingView
   rdfs:label "Document Knowledge Modeling View" ;
   rdfs:label "DocumentKnowledgeModelingView" ;
 .
-lo:DoubleDoorFridge
-  a owl:Class ;
-  rdfs:label "Double Door Fridge" ;
-  rdfs:subClassOf lo:Fridge ;
-.
-lo:DoubleDoorFridge_1
-  a lo:DoubleDoorFridge ;
-  rdfs:label "DoubleDoorFridge_1" ;
-.
 lo:Down
   a owl:Class ;
   rdfs:subClassOf lo:Arrow ;
@@ -510,7 +489,6 @@ lo:Drone_1
 lo:ElectricAppliances
   a owl:Class ;
   rdfs:label "Electric Appliances" ;
-  rdfs:subClassOf lo:SceneObject ;
 .
 lo:ElectricAppliances_1
   a lo:ElectricAppliances ;
@@ -957,15 +935,6 @@ lo:Sign
   a owl:Class ;
   rdfs:subClassOf lo:SceneObject ;
 .
-lo:SingleDoorFridge
-  a owl:Class ;
-  rdfs:label "Single Door Fridge" ;
-  rdfs:subClassOf lo:Fridge ;
-.
-lo:SingleDoorFridge_1
-  a lo:SingleDoorFridge ;
-  rdfs:label "SingleDoorFridge_1" ;
-.
 lo:SmallSign
   a owl:Class ;
   rdfs:subClassOf lo:Sign ;
@@ -1169,11 +1138,6 @@ lo:Warehouse
   a owl:Class ;
   rdfs:subClassOf lo:Building ;
 .
-lo:Warranty
-  a owl:Class ;
-  rdfs:label "Warranty" ;
-  rdfs:subClassOf lo:ModelingElement ;
-.
 lo:White
   a lo:Colour ;
 .
@@ -1231,7 +1195,6 @@ lo:cabinetHasBrand
 lo:cabinetHasWarranty
   a owl:ObjectProperty ;
   rdfs:label "cabinetHasWarranty" ;
-  rdfs:range lo:Warranty ;
 .
 lo:characterIsASceneObject
   a owl:ObjectProperty ;
@@ -1276,7 +1239,6 @@ lo:electricappliancesHasWarranty
   a owl:ObjectProperty ;
   rdfs:domain lo:ElectricAppliances ;
   rdfs:label "electricappliancesHasWarranty" ;
-  rdfs:range lo:Warranty ;
 .
 lo:elementHasBridgingConcept
   a owl:ObjectProperty ;
@@ -1300,7 +1262,6 @@ lo:furnitureHasWarranty
   a owl:ObjectProperty ;
   rdfs:domain lo:Furniture ;
   rdfs:label "furnitureHasWarranty" ;
-  rdfs:range lo:Warranty ;
 .
 lo:hasModelingView
   a owl:ObjectProperty ;
