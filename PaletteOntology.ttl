@@ -14,10 +14,15 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 lo:Character
-  rdfs:subClassOf <http://fhnw.ch/SapScenesOntology#sceneObject> ;
+  rdfs:subClassOf lo:SceneObject ;
+.
+lo:DoubleDoorFridge
+  a owl:Class ;
+  rdfs:label "Double Door Fridge" ;
+  rdfs:subClassOf lo:Fridge ;
 .
 lo:ElectricAppliances
-  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf lo:SceneObject ;
 .
 <http://fhnw.ch/modelingEnvironment/PaletteOntology>
   po:paletteConstructIsHiddenFromPalette false ;
@@ -128,8 +133,8 @@ po:Bike
   a po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
-  po:paletteConstructHasModelImage "Bike.png" ;
-  po:paletteConstructHasPaletteThumbnail "Thumbnail_Bike.png" ;
+  po:paletteConstructHasModelImage "Bike.PNG" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_Bike.PNG" ;
   po:paletteConstructHasParentPaletteConstruct po:TransportationElement ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
@@ -197,7 +202,7 @@ po:Cabinets
   po:paletteConstructHasParentPaletteConstruct po:Furniture ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette true ;
+  po:paletteConstructIsHiddenFromPalette false ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Cabinets ;
   rdfs:label "Cabinets" ;
 .
@@ -481,6 +486,7 @@ po:DoubleDoorFridge
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
   po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct lo:DoubleDoorFridge ;
   rdfs:label "Double Door Fridge" ;
 .
 po:Down
@@ -530,7 +536,7 @@ po:ElectricAppliances
   po:paletteConstructHasPaletteThumbnail "Thumbnail_ElectricAppliances.PNG" ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette true ;
+  po:paletteConstructIsHiddenFromPalette false ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:ElectricAppliances ;
   rdfs:label "Electric Appliances" ;
 .
@@ -644,14 +650,14 @@ po:Heater
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
   po:paletteConstructIsHiddenFromPalette false ;
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:Heater ;
-  rdfs:label "Dishwasher" ;
+  rdfs:label "Heater" ;
 .
 po:HighCabinet
   a po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
   po:paletteConstructHasModelImage "HighCabinet.PNG" ;
-  po:paletteConstructHasPaletteThumbnail "Thumbnail_HighCabinet.png" ;
+  po:paletteConstructHasPaletteThumbnail "Thumbnail_HighCabinet.PNG" ;
   po:paletteConstructHasParentPaletteConstruct po:Cabinets ;
   po:paletteConstructHasWidth 100 ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
@@ -812,7 +818,7 @@ po:LowerCabinetWithSinkAndWasteDisposal
   a po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
   po:paletteConstructHasHeight 70 ;
-  po:paletteConstructHasModelImage "LowerCabinetWithSinkAndWasteDisposal.PNG" ;
+  po:paletteConstructHasModelImage "LowerCabinetWithSinkAndWasteDisposal.png" ;
   po:paletteConstructHasPaletteThumbnail "Thumbnail_LowerCabinetWithSinkAndWasteDisposal.PNG" ;
   po:paletteConstructHasParentPaletteConstruct po:LowerCabinet ;
   po:paletteConstructHasWidth 100 ;
@@ -1449,32 +1455,6 @@ po:WallCabinetWithGlass
   po:paletteConstructIsRelatedToModelingLanguageConstruct lo:WallCabinetWithGlass ;
   rdfs:label "Wall Cabinet with Glass" ;
 .
-po:WallCabinetWithShelvesAndNoDoor
-  a po:PaletteElement ;
-  po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
-  po:paletteConstructHasHeight 70 ;
-  po:paletteConstructHasModelImage "WallCabinetWithShelvesAndNoDoor.PNG" ;
-  po:paletteConstructHasPaletteThumbnail "Thumbnail_WallCabinetWithShelvesAndNoDoor.PNG" ;
-  po:paletteConstructHasParentPaletteConstruct po:WallCabinet ;
-  po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct lo:WallCabinetWithShelvesAndNoDoor ;
-  rdfs:label "Wall Cabinet with Shelves and No Door" ;
-.
-po:WallCabinetWithSideDoor
-  a po:PaletteElement ;
-  po:paletteConstructBelongsToModelingView lo:SAPSceneModellingView ;
-  po:paletteConstructHasHeight 70 ;
-  po:paletteConstructHasModelImage "WallCabinetWithSideDoor.PNG" ;
-  po:paletteConstructHasPaletteThumbnail "Thumbnail_WallCabinetWithSideDoor.PNG" ;
-  po:paletteConstructHasParentPaletteConstruct po:WallCabinet ;
-  po:paletteConstructHasWidth 100 ;
-  po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesElements ;
-  po:paletteConstructIsHiddenFromPalette false ;
-  po:paletteConstructIsRelatedToModelingLanguageConstruct lo:WallCabinetWithSideDoor ;
-  rdfs:label "Wall Cabinet with Side Door" ;
-.
 po:WallReck
   a po:PaletteElement ;
   po:paletteConstructBelongsToModelingView lo:SAPScenesModelingView ;
@@ -1585,6 +1565,7 @@ po:hasNote
   po:paletteConstructHasPaletteThumbnail "Thumbnail_hasNote.PNG" ;
   po:paletteConstructIsGroupedInPaletteCategory po:SAPScenesRelations ;
   po:paletteConstructIsHiddenFromPalette false ;
+  po:paletteConstructIsRelatedToModelingLanguageConstruct lo:hasNote ;
   rdfs:label "hasNote" ;
 .
 po:hasParentDataDocument
