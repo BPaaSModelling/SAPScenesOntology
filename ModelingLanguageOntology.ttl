@@ -281,11 +281,7 @@ lo:CabinetInstallationHeight
 lo:Cabinets
   a owl:Class ;
   rdfs:label "Cabinets" ;
-  rdfs:subClassOf owl:Thing ;
-.
-lo:Cabinets_1
-  a lo:Cabinets ;
-  rdfs:label "Cabinets_1" ;
+  rdfs:subClassOf lo:Furniture ;
 .
 lo:Cafe
   a owl:Class ;
@@ -439,10 +435,6 @@ lo:Dishwasher
   rdfs:label "Dishwasher" ;
   rdfs:subClassOf lo:ElectricAppliances ;
 .
-lo:Dishwasher_1
-  a lo:Dishwasher ;
-  rdfs:label "Dishwasher_1" ;
-.
 lo:Doctor
   a owl:Class ;
   rdfs:label "Doctor" ;
@@ -490,10 +482,6 @@ lo:ElectricAppliances
   a owl:Class ;
   rdfs:label "Electric Appliances" ;
 .
-lo:ElectricAppliances_1
-  a lo:ElectricAppliances ;
-  rdfs:label "ElectricAppliances_1" ;
-.
 lo:Electrolux
   a lo:Brand ;
   rdfs:label "Electrolux" ;
@@ -507,10 +495,6 @@ lo:ExtractorHood
   a owl:Class ;
   rdfs:label "Extractor Hood" ;
   rdfs:subClassOf lo:ElectricAppliances ;
-.
-lo:ExtractorHood_1
-  a lo:ExtractorHood ;
-  rdfs:label "ExtractorHood_1" ;
 .
 lo:Factory
   a owl:Class ;
@@ -575,10 +559,6 @@ lo:Heater
   rdfs:label "Heater" ;
   rdfs:subClassOf lo:ElectricAppliances ;
 .
-lo:Heater_1
-  a lo:Heater ;
-  rdfs:label "Heater_1" ;
-.
 lo:HighCabinet
   a owl:Class ;
   rdfs:label "High Cabinet" ;
@@ -589,22 +569,10 @@ lo:HighCabinetForStorage
   rdfs:label "High Cabinet for Storage" ;
   rdfs:subClassOf lo:HighCabinet ;
 .
-lo:HighCabinetForStorage_1
-  a lo:HighCabinetForStorage ;
-  rdfs:label "HighCabinetForStorage_1" ;
-.
 lo:HighCabinetWithOven
   a owl:Class ;
   rdfs:label "High Cabinet with Oven" ;
   rdfs:subClassOf lo:HighCabinet ;
-.
-lo:HighCabinetWithOven_1
-  a lo:HighCabinetWithOven ;
-  rdfs:label "HighCabinetWithOven_1" ;
-.
-lo:HighCabinet_1
-  a lo:HighCabinet ;
-  rdfs:label "HighCabinet_1" ;
 .
 lo:House
   a owl:Class ;
@@ -692,31 +660,15 @@ lo:LowerCabinetWithCookingRange
   rdfs:label "Lower Cabinet with Cooking Range" ;
   rdfs:subClassOf lo:LowerCabinet ;
 .
-lo:LowerCabinetWithCookingRange_1
-  a lo:LowerCabinetWithCookingRange ;
-  rdfs:label "LowerCabinetWithCookingRange_1" ;
-.
 lo:LowerCabinetWithShelves
   a owl:Class ;
   rdfs:label "Lower Cabinet with Shelves" ;
   rdfs:subClassOf lo:LowerCabinet ;
 .
-lo:LowerCabinetWithShelves_1
-  a lo:LowerCabinetWithShelves ;
-  rdfs:label "LowerCabinetWithShelves_1" ;
-.
 lo:LowerCabinetWithSinkAndWasteDisposal
   a owl:Class ;
   rdfs:label "Lower Cabinet with Sink and Waste Disposal" ;
   rdfs:subClassOf lo:LowerCabinet ;
-.
-lo:LowerCabinetWithSinkAndWasteDisposal_1
-  a lo:LowerCabinetWithSinkAndWasteDisposal ;
-  rdfs:label "LowerCabinetWithSinkAndWasteDisposal_1" ;
-.
-lo:LowerCabinet_1
-  a lo:LowerCabinet ;
-  rdfs:label "LowerCabinet_1" ;
 .
 lo:MRhasNotAllowedCombination
   a owl:ObjectProperty ;
@@ -1103,32 +1055,6 @@ lo:WallCabinetWithGlass
   a owl:Class ;
   rdfs:label "Wall Cabinet with Glass" ;
   rdfs:subClassOf lo:WallCabinet ;
-.
-lo:WallCabinetWithGlass_1
-  a lo:WallCabinetWithGlass ;
-  rdfs:label "WallCabinetWithGlass_1" ;
-.
-lo:WallCabinetWithShelvesAndNoDoor
-  a owl:Class ;
-  rdfs:label "Wall Cabinet with Shelves and No Door" ;
-  rdfs:subClassOf lo:WallCabinet ;
-.
-lo:WallCabinetWithShelvesAndNoDoor_1
-  a lo:WallCabinetWithShelvesAndNoDoor ;
-  rdfs:label "WallCabinetWithShelvesAndNoDoor_1" ;
-.
-lo:WallCabinetWithSideDoor
-  a owl:Class ;
-  rdfs:label "Wall Cabinet with Side Door" ;
-  rdfs:subClassOf lo:WallCabinet ;
-.
-lo:WallCabinetWithSideDoor_1
-  a lo:WallCabinetWithSideDoor ;
-  rdfs:label "WallCabinetWithSideDoor_1" ;
-.
-lo:WallCabinet_1
-  a lo:WallCabinet ;
-  rdfs:label "WallCabinet_1" ;
 .
 lo:WallReck
   a owl:Class ;
