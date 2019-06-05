@@ -3,9 +3,10 @@
 # imports: http://fhnw.ch/modelingEnvironment/DomainOntology
 # imports: http://ikm-group.ch/archimeo
 # imports: http://ikm-group.ch/archimeo/bpaas
+# imports: http://ikm-group.ch/archiMEO/BMM
+# imports: http://ikm-group.ch/archimeo/nco
 # prefix: lo
 
-@prefix : <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
 @prefix archi: <http://ikm-group.ch/archiMEO/archimate#> .
 @prefix archimeo: <http://ikm-group.ch/archiMEO#> .
 @prefix bmm: <http://ikm-group.ch/archiMEO/BMM#> .
@@ -23,6 +24,7 @@
 @prefix lo: <http://fhnw.ch/modelingEnvironment/LanguageOntology#> .
 @prefix media-types: <http://www.iana.org/assignments/media-types#> .
 @prefix nco: <http://ikm-group.ch/archiMEO/nco#> .
+@prefix nco: <http://ikm-group.ch/archimeo/nco#> .
 @prefix ontogov: <http://ch.fhnw.ontogov#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
