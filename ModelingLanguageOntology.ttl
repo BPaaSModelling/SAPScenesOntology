@@ -129,6 +129,14 @@ dsml4ptm:isPartOfKoGuDO
   owl:imports <http://ikm-group.ch/archimeo/bpaas> ;
   owl:versionInfo 1.1 ;
 .
+<http://fhnw.ch/modelingEnvironment/LanguageOntology#1Year>
+  a lo:Warranty ;
+  rdfs:label "1 Year" ;
+.
+<http://fhnw.ch/modelingEnvironment/LanguageOntology#2Years>
+  a lo:Warranty ;
+  rdfs:label "2 Years" ;
+.
 lo:Accessory
   a owl:Class ;
   rdfs:subClassOf lo:SceneObject ;
@@ -153,6 +161,29 @@ lo:ApplianceDimensions
   a owl:DatatypeProperty ;
   rdfs:domain lo:ElectricAppliances ;
   rdfs:label "Appliance Dimensions" ;
+  rdfs:range xsd:string ;
+.
+lo:ApplianceInstallationHeight
+  a owl:DatatypeProperty ;
+  rdfs:domain lo:ElectricAppliances ;
+  rdfs:label "Appliance Installation Height" ;
+  rdfs:range xsd:string ;
+.
+lo:Architecture
+  a owl:Class ;
+  rdfs:label "Architecture" ;
+  rdfs:subClassOf lo:SceneObject ;
+.
+lo:ArchitectureDimensions
+  a owl:DatatypeProperty ;
+  rdfs:domain lo:Architecture ;
+  rdfs:label "Architecture Dimensions" ;
+  rdfs:range xsd:string ;
+.
+lo:ArchitectureInstallationHeight
+  a owl:DatatypeProperty ;
+  rdfs:domain lo:Architecture ;
+  rdfs:label "Architecture Installation Height" ;
   rdfs:range xsd:string ;
 .
 lo:Arrow
@@ -291,7 +322,6 @@ lo:Cafe
 lo:Car
   a owl:Class ;
   rdfs:label "Car" ;
-  rdfs:label "SAP TransportationElement" ;
   rdfs:subClassOf lo:TransportationElement ;
 .
 lo:Car_1
@@ -319,6 +349,7 @@ lo:Chair_1
 lo:Character
   a owl:Class ;
   rdfs:label "Character" ;
+  rdfs:subClassOf lo:SceneObject ;
 .
 lo:Character_1
   a lo:Character ;
@@ -481,6 +512,7 @@ lo:Drone_1
 lo:ElectricAppliances
   a owl:Class ;
   rdfs:label "Electric Appliances" ;
+  rdfs:subClassOf lo:SceneObject ;
 .
 lo:Electrolux
   a lo:Brand ;
@@ -1064,6 +1096,11 @@ lo:Warehouse
   a owl:Class ;
   rdfs:subClassOf lo:Building ;
 .
+lo:Warranty
+  a owl:Class ;
+  rdfs:label "Warranty" ;
+  rdfs:subClassOf owl:Thing ;
+.
 lo:White
   a lo:Colour ;
 .
@@ -1080,6 +1117,11 @@ lo:Whiteboard
 lo:Whiteboard_1
   a lo:Whiteboard ;
   rdfs:label "Whiteboard_1" ;
+.
+lo:Window
+  a owl:Class ;
+  rdfs:label "Window" ;
+  rdfs:subClassOf lo:Architecture ;
 .
 lo:Woman
   a owl:Class ;
@@ -1165,6 +1207,7 @@ lo:electricappliancesHasWarranty
   a owl:ObjectProperty ;
   rdfs:domain lo:ElectricAppliances ;
   rdfs:label "electricappliancesHasWarranty" ;
+  rdfs:range lo:Warranty ;
 .
 lo:elementHasBridgingConcept
   a owl:ObjectProperty ;
@@ -1178,16 +1221,38 @@ lo:elementIsMappedWithDOConcept
   rdfs:label "Modeling element is mapped with a Domain Ontology concept" ;
   rdfs:range <http://fhnw.ch/modelingEnvironment/DomainOntology#DomainOntologyConcept> ;
 .
+lo:extractorhoodHasColour
+  a owl:DatatypeProperty ;
+  rdfs:label "extractorhood Has Colour" ;
+  rdfs:range xsd:string ;
+.
+lo:fridgeHasBrand
+  a owl:ObjectProperty ;
+  rdfs:domain lo:Fridge ;
+  rdfs:label "fridge Has Brand" ;
+  rdfs:range lo:Brand ;
+.
+lo:fridgeHasColour
+  a owl:ObjectProperty ;
+  rdfs:domain lo:Fridge ;
+  rdfs:label "fridge Has Colour" ;
+  rdfs:range lo:Colour ;
+.
+lo:fridgeHasWarranty
+  a owl:ObjectProperty ;
+  rdfs:domain lo:Fridge ;
+  rdfs:label "fridge Has Warranty" ;
+  rdfs:range lo:Warranty ;
+.
 lo:furnitureHasBrand
   a owl:ObjectProperty ;
-  rdfs:domain lo:Furniture ;
   rdfs:label "furnitureHasBrand" ;
   rdfs:range lo:Brand ;
 .
 lo:furnitureHasWarranty
   a owl:ObjectProperty ;
-  rdfs:domain lo:Furniture ;
   rdfs:label "furnitureHasWarranty" ;
+  rdfs:range lo:Warranty ;
 .
 lo:hasModelingView
   a owl:ObjectProperty ;
